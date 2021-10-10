@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -26,7 +27,7 @@
           <a class="navigation-link" href="">Корзина</a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-menu">
         <li class="navigation-item">
           <a class="navigation-link" href="">Каталог товаров</a>
           <ul class="navigation-catalog-list visually-hidden">
@@ -161,7 +162,7 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="button" type="submit"><span>Показать</span></button>
         </form>
 
         <form class="sorting-type">
@@ -215,12 +216,12 @@
           </li>
         </ul>
 
-        <button class="button-wide pagination-show-more" type="button">Показать ещё</button>
+        <button class="button-border pagination-show-more" type="button">Загрузить еще</button>
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Назад</span>
+            <a class="pagination-prev pagination-disabled">
+              <span>Назад</span>
             </a>
           </li>
           <li class="pagination-item">
@@ -239,8 +240,8 @@
             <a class="pagination-link" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Вперёд</span>
+            <a class="pagination-next" href="#">
+              <span>Вперёд</span>
             </a>
           </li>
         </ul>
@@ -258,31 +259,31 @@
             <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
           </td>
           <td>
-            <ol>
-              <li><a href="#">Доставка</a></li>
+            <ol class="footer-menu">
+              <li><a href="#delivery">Доставка</a></li>
               <li><a href="#">Гарантии</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ol>
           </td>
           <td><a href="tel:+78128121212">+7(812)812-12-12</a></td>
         </tr>
 
         <tr>
-          <td></td>
+          <td><div class="line"></div></td>
           <td>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a class="facebook" href="#">
                   <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a class="instagram" href="#">
                   <span class="visually-hidden">Инстаграм</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a class="twitter" href="#">
                   <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>

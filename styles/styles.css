@@ -95,7 +95,7 @@ ul {
 .additional-features h2,
 .about-us h2,
 .contacts h2,
-.subscription h2{
+.subscription h2, .inner-header-title{
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -135,9 +135,7 @@ ul {
   line-height: 24px;
   color: #000000;
 }
-.category-item img {
-  background-color: #FFE17F;
-}
+.category-item img {background-color: #FFE17F;}
 .delivery-tab-active {
   background-color: black;
   color: #FFE17F;
@@ -181,10 +179,74 @@ ul {
   border: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
+/* CATALOG */
+.breadcrumbs .breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+  opacity: 0.6;
+}
+fieldset {
+  border: none;
+}
+.catalog-filter h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.catalog-filter-title {
+  width: 100%;
+  border-top: 2px solid #000000;
+  padding-top: 12px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.product-card .product-card-title {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.product-card-price {
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+.pagination-show-more {
+  width: 100%;
+}
+.pagination .pagination-prev, .pagination .pagination-next{
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.pagination .pagination-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #444444;
+  opacity: 0.3;
+}
 /* FOOTER */
 .page-footer {
   color: #ffffff;
   background-color: #444444;
+}
+.footer-menu li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 .contacts-phone {text-decoration-line: underline;}
 .page-footer div.line {
