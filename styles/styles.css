@@ -287,6 +287,9 @@ ul, ol {
 .custom-delivery-icon{
   width: 125px;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   vertical-align: center;
   background-color: #FFE17F;
