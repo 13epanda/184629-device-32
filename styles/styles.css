@@ -482,7 +482,7 @@ ul, ol {
   margin-right: 70px;
 }
 .catalog-filter {
-  /*width: 30%;*/
+  flex-grow: 1;
   background-color: #EBEBEB;
 }
 .catalog-filter h3 {
@@ -511,7 +511,7 @@ ul, ol {
   width: 200px;
 }
 .catalog-right-column {
-  /*width: 70%;*/
+  flex-grow: 1;
 }
 .sorting-wrap {
   height: 70px;
