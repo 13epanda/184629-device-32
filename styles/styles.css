@@ -210,7 +210,10 @@ button .visually-hidden {display: block;}
 .navigation-user .navigation-link:active {opacity: 0.3;}
 
 .navigation-user li:last-child, .navigation-user li:nth-child(3), .navigation-menu >li:last-child {margin-left: auto;}
-.navigation-menu .navigation-link {padding: 14px 20px;}
+.navigation-menu .navigation-link {
+  position: relative;
+  padding: 14px 20px;
+}
 .navigation-menu .navigation-item:first-child {position: relative; width: fit-content;}
 .navigation-menu .navigation-item:first-child a.navigation-link:after {
   content:"";
@@ -229,7 +232,16 @@ button .visually-hidden {display: block;}
   border: 2px solid #AF4FFF;
   border-radius: 25px;
 }
-.navigation-menu .navigation-item:not(:first-child) .navigation-link:hover {text-decoration: underline;}
+.navigation-menu .navigation-item:not(:first-child) .navigation-link:hover:after {
+  content: "";
+  margin: 0 20px;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #000000;
+  height: 2px;
+}
 .navigation-menu .navigation-item:not(:first-child) .navigation-link:active {
   text-decoration: underline;
   opacity: 0.3;
