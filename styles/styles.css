@@ -67,9 +67,11 @@ ul, ol {
 }
 .visually-hidden {
   visibility: hidden;
-  height: 0;
-  width: 0;
-  margin: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .button, .delivery-tab-active, .button-border{
   font-family: "Raleway", sans-serif;
@@ -118,6 +120,13 @@ ul, ol {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }
+.slider-button {padding: 10px;}
+.slider-button:focus {
+  border: 2px solid #AF4FFF;
+  border-radius: 6px;
+}
+.slider-button:hover {opacity: 0.6;}
+.slider-button:active {opacity: 0.3;}
 
 /*error in focus*/
 button .visually-hidden {display: block;}
@@ -260,9 +269,25 @@ button .visually-hidden {display: block;}
 /* GALLERY */
 .gallery {
   display: flex;
+  position: relative;
   align-content: flex-start;
-  margin-top: -160px;
   margin-bottom: 69px;
+}
+.gallery:before {
+  content: "01";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 30px;
+  text-align: right;
+  width: 100%;
+  height: 160px;
+  background-color: #FFE17F;
 }
 .gallery-product {
   display: flex;
@@ -295,7 +320,7 @@ button .visually-hidden {display: block;}
   left: 0;
 }
 .slider-next {background-image: url("../img/icons/arrow-thin.svg");}
-.description-product {padding-top: 130px;}
+.description-product {padding-top: 130px; z-index: 1;}
 .description-product p {margin: 0;}
 .description-product div{
   display: flex;
@@ -517,12 +542,14 @@ button .visually-hidden {display: block;}
 .page-container tr:last-child td{
   padding-top: 50px;
 }
+.page-footer .page-header-logo path {fill: #FFC700;}
 .page-container address {width: 280px;}
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 7px;
+  color: #ffffff;
 }
 .footer-menu li {
   font-family: "Raleway", sans-serif;
@@ -533,12 +560,42 @@ button .visually-hidden {display: block;}
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+.page-footer a{color: #ffffff;}
+.footer-menu a {
+  padding: 14px 20px;
+  position: relative;
+}
+.page-footer .footer-menu a:focus {
+  border: 2px solid #AF4FFF;
+  border-radius: 25px;
+}
+.footer-menu a:hover, .footer-menu a:active {color: #FFC700;}
+.footer-menu a:hover:after, .footer-menu a:active:after {
+  content: "";
+  margin: 0 20px;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #FFC700;
+  height: 2px;
+}
+.footer-menu a:active {color: #FFC700; opacity: 0.3;}
 .contacts-phone {text-decoration-line: underline;}
 .page-footer div.line {
   height: 7px;
   width: 80px;
   background-color: #FFC700;
 }
+.footer-tel {padding: 5px 15px;}
+.footer-tel:focus {
+  border: 2px solid #AF4FFF;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.footer-tel:hover,  .footer-tel:active {color: #FFC700;}
+.footer-tel:active {opacity: 0.3; }
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -553,21 +610,36 @@ button .visually-hidden {display: block;}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.3);
 }
-.footer-social-item a{
+.footer-social-item a {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
-.footer-social-item a.facebook {
-  background-image: url("../img/icons/facebook.svg");
+.footer-social-item a.facebook {background-image: url("../img/icons/facebook.svg");}
+.footer-social-item a.instagram {background-image: url("../img/icons/instagram.svg");}
+.footer-social-item a.twitter {background-image: url("../img/icons/twitter.svg");}
+.footer-social-item a:focus {
+  background-color: #444444;
+  border: 5px solid #AF4FFF;
+  fill: #ffffff;
 }
-.footer-social-item a.instagram {
-  background-image: url("../img/icons/instagram.svg");
+.footer-social-item a:hover, .footer-social-item a:active {
+  background-color: #FFC700;
 }
-.footer-social-item a.twitter {
-  background-image: url("../img/icons/twitter.svg");
+.footer-social-item a:active {
+  opacity: 0.3;
 }
+
+.page-footer .htmlacademy {display: inline-block;}
+.page-footer .htmlacademy svg{padding: 10px; fill: #FFC700;}
+.footer-menu .htmlacademy:focus {border: 2px solid #AF4FFF;}
+.footer-menu .htmlacademy:hover svg {fill: #ffffff;}
+.footer-menu .htmlacademy:active svg {fill: #ffffff; opacity: 0.3;}
 
 /* CATALOG */
 .inner-header .inner-header-title, .breadcrumbs {padding-left: 60px;}
