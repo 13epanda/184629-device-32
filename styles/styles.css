@@ -473,6 +473,8 @@ button .visually-hidden {display: block;}
   padding-left: 26px;
 }
 .about-us ul li:before {
+  content: "";
+  display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 4px;
