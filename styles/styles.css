@@ -29,10 +29,7 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
+html {height: 100%;}
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -112,6 +109,17 @@ ul, ol {
   border: 3px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
+.button-third:focus {border: 3px solid #AF4FFF;}
+.button-third:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.button-third:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*error in focus*/
 button .visually-hidden {display: block;}
 
 /* HEADER */
@@ -474,12 +482,27 @@ button .visually-hidden {display: block;}
   align-items: flex-end;
 }
 .subscription span {margin-left: auto}
+.subscription-free:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  margin-right: 21px;
+  top: auto;
+  background-image: url("../img/icons/tick.svg");
+}
 .subscription  #subscription-mail {
+  height: 100%;
   width: 50%;
   background: none;
   border: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
+.subscription  #subscription-mail:focus {background-color: #DCDCDC;}
+.subscription  #subscription-mail:hover {border-color:rgba(0, 0, 0, 0.2);}
+.subscription  #subscription-mail:active {border-color:rgba(0, 0, 0, 1);}
+.subscription  #subscription-mail:hover {border-color:rgba(0, 0, 0, 0.2);}
 
 /* FOOTER */
 .page-footer {
