@@ -53,10 +53,12 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
 }
 a:visited {color: black;}
 a:link {color: black;}
@@ -112,7 +114,9 @@ ul, ol {
   border: 3px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
-.button-third:focus {border: 3px solid #AF4FFF;}
+.button-third:focus {
+  border: 3px solid #AF4FFF;
+}
 .button-third:hover {
   background-color: #000000;
   color: #ffffff;
@@ -121,7 +125,9 @@ ul, ol {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }
-.button-fourth:focus {border: 5px solid #AF4FFF;}
+.button-fourth:focus {
+  border: 5px solid #AF4FFF;
+}
 .button-fourth:hover, .button-fourth:active {border: 3px solid #000000;}
 .button-fourth:active {opacity: 0.3;}
 .slider-button {padding: 10px;}
@@ -132,7 +138,6 @@ ul, ol {
 .slider-button:hover {opacity: 0.6;}
 .slider-button:active {opacity: 0.3;}
 
-/*error in focus*/
 button .visually-hidden {display: block;}
 
 /* HEADER */
@@ -208,6 +213,19 @@ button .visually-hidden {display: block;}
   width: 16px;
   height: 14px;
   background: url("../img/icons/cart.svg");
+}
+.navigation-user .navigation-item .cart:after {
+  content: "2";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #000000;
+  text-align: center;
 }
 .navigation-user {margin-bottom: 29px;}
 .navigation-user .navigation-link:hover {opacity: 0.6;}
@@ -745,7 +763,162 @@ button .visually-hidden {display: block;}
 }
 .catalog-filter fieldset {
   width: 200px;
+  padding: 0;
+  margin-bottom: 45px;
 }
+.catalog-filter-title {margin-bottom: 15px;}
+/* Range */
+.range {
+  margin-top: 25px;
+  margin-bottom: 36px;
+}
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: #DCDCDC;
+}
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #EBEBEB;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.toggle-min, .toggle-max {top: -9px;}
+.toggle-min {left: 0;}
+.toggle-max {right: 0;}
+.label-min {left: -9px;}
+.label-max {right: -9px;}
+.label-min, .label-max {
+  position: absolute;
+  top: 7px;
+  opacity: 0.3;
+  width: fit-content;
+  max-width: 60px;
+}
+.range-wrapper-inputs {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+.catalog-filter-label {display: flex;}
+.range-input {
+  padding: 0 2px;
+  font: inherit;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+.label-min:focus, .label-max:focus {color: #AF4FFF;}
+.toggle-min:focus, .toggle-max:focus {border: 2px solid #AF4FFF;}
+.label-min:active, .label-max:active {opacity:1;}
+.toggle-min:active, .toggle-max:active {
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+/* Mark */
+.control {
+  position: relative;
+  display: block;
+}
+.control-input {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.control-input[type="checkbox"] + .control-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  opacity: 0.2;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.control-label {margin-left: 37px;}
+.control:hover .control-label {color: black;}
+.control-input[type="checkbox"]:checked + .control-mark:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/icons/tick.svg");
+  background-size: contain;
+}
+/*RADIO*/
+.control-input[type="radio"] {
+  border-radius: 50%;
+}
+.control-input[type="radio"] + .control-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.2;
+  box-sizing: border-box;
+}
+.control-input[type="radio"]:checked + .control-mark:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 4px;
+}
+.control-input:checked + .control-mark {opacity: 1;}
+.control-input:focus-within + .control-mark {border-color: #AF4FFF;}
+.control-input:focus-within + .control-label {color: #AF4FFF;}
+.control-input:checked:hover + .control-mark {opacity: 0.5;}
+.control-input:active {opacity: 0.2;}
+/* Control */
+.select-control {
+  width: 227px;
+  box-sizing: border-box;
+  padding: 4px 0 7px 13px;
+  margin-left: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  cursor: pointer;
+}
+.select-control:focus {border: 5px solid #AF4FFF;}
+.select-control:hover {opacity: 0.6;}
+.select-control:active {opacity: 0.3;}
+
 .catalog-right-column {
   flex-grow: 1;
 }
@@ -759,7 +932,26 @@ button .visually-hidden {display: block;}
   align-items: center;
   padding-left: 72px;
   margin-right: auto;
+  padding-top: 20px;
 }
+.sorting-from-more {
+  margin-left: auto;
+  margin-right: 19px;
+}
+.sorting-from-more, .sorting-from-smaller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  opacity: 0.2;
+  width: 40px;
+  height: 40px;
+}
+.sorting-from-more:hover, .sorting-from-smaller:hover {opacity: 0.5;}
+.sorting-from-more:focus, .sorting-from-smaller:focus {border: 5px solid #AF4FFF;}
+.sorting-from-more:focus svg, .sorting-from-smaller:focus svg {opacity: 0.2;}
+.sorting-from-more:active, .sorting-from-smaller:active {opacity: 1;}
+
 .products-wrap {
   width: 760px;
   margin-left: 72px;
