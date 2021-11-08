@@ -62,6 +62,26 @@
       <ul class="navigation-list navigation-menu">
         <li class="navigation-item">
           <a class="navigation-link" href="">Каталог товаров</a>
+          <ul class="navigation-catalog-list">
+            <li class="navigation-catalog-item">
+              <a class="navigation-link" href="">Виртуальная реальность</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="navigation-link" href="">Фитнес-браслеты</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="navigation-link" href="">Квадрокоптеры</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="navigation-link" href="">Моноподы для cелфи</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="navigation-link" href="">Умные часы</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="navigation-link" href="">Экшн-камеры</a>
+            </li>
+          </ul>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="">Доставка</a>
@@ -71,26 +91,6 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="">Контакты</a>
-        </li>
-      </ul>
-      <ul class="navigation-catalog-list visually-hidden">
-        <li class="navigation-catalog-item">
-          <a class="navigation-link" href="">Виртуальная реальность</a>
-        </li>
-        <li class="navigation-catalog-item">
-          <a class="navigation-link" href="">Моноподы для cелфи</a>
-        </li>
-        <li class="navigation-catalog-item">
-          <a class="navigation-link" href="">Экшн-камеры</a>
-        </li>
-        <li class="navigation-catalog-item">
-          <a class="navigation-link" href="">Фитнес-браслеты</a>
-        </li>
-        <li class="navigation-catalog-item">
-          <a class="navigation-link" href="">Умные часы</a>
-        </li>
-        <li class="navigation-catalog-item">
-          <a class="navigation-link" href="">Квадрокоптеры</a>
         </li>
       </ul>
     </nav>
@@ -384,6 +384,49 @@
         </tr>
       </table>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group delivery-modal-name">
+              <label for="delivery-name">Ваше имя:</label>
+              <input class="delivery-form-field field" type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия">
+              <span class="modal-hint modal-hint-error">Пожалуйста, представьтесь</span>
+            </div>
+            <div class="field-group delivery-modal-email">
+              <label for="delivery-email">Ваш e-mail:</label>
+              <input class="delivery-form-field field" type="text" id="delivery-email" name="delivery-email" placeholder="Почта" value="krasotka92@mail.ru">
+              <span class="modal-hint">Забавный у вас адрес</span>
+            </div>
+            <div class="field-group delivery-modal-order">
+              <label for="delivery-order">Что нужно привезти:</label>
+              <input class="delivery-form-field field" type="text" id="delivery-order" name="delivery-order" placeholder="В свободной форме">
+              <span class="visually-hidden">Что-то нам всё равно нужно привезти</span>
+            </div>
+            <div class="field-group delivery-modal-count">
+              <label for="delivery-count">Количество:</label>
+              <div class="delivery-count">
+                <button class="button delivery-form-count count-small">
+                  <span class="visually-hidden">Уменьшить количество товаров</span>
+                </button>
+                <input class="delivery-form-field field" type="text" id="delivery-count" name="delivery-count" value="1">
+                <button class="button delivery-form-count count-more">
+                  <span class="visually-hidden">Увеличить количество товаров</span>
+                </button>
+              </div>
+            </div>
+            <button class="button button-primary" type="submit">
+              <span>Отправить</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
 
