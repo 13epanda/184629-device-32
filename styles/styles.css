@@ -180,6 +180,7 @@ button .visually-hidden {display: block;}
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  z-index: 3;
 }
 .navigation .navigation-item {position: relative;}
 .navigation-user .navigation-item .user-exit {
@@ -245,7 +246,8 @@ button .visually-hidden {display: block;}
   color: #000000;
   text-align: center;
 }
-.navigation-user .navigation-item .cart:hover + .popover-cart {display: block;}
+.navigation-user .navigation-item .cart-active + .popover-cart {display: block;}
+.navigation-item:hover .navigation-catalog-list {display: grid;}
 .navigation-user {margin-bottom: 35px;}
 .navigation-user .navigation-link:not(:first-child):hover {opacity: 0.6;}
 .navigation-user .navigation-link:not(:first-child):active {opacity: 0.3;}
@@ -304,11 +306,11 @@ button .visually-hidden {display: block;}
   position: relative;
   padding: 14px 20px;
 }
-.navigation-menu .navigation-item:first-child {position: relative; width: fit-content;}
+.navigation-menu .navigation-item:first-child {position: relative; width: auto;}
 .navigation-menu .navigation-item:first-child >.navigation-link:after {
   content:"";
   position: absolute;
-  right: 0;
+  right: 4px;
   top: 50%;
   z-index: 3;
   transform: translate(55px, -50%);
