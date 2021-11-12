@@ -246,7 +246,7 @@ button .visually-hidden {display: block;}
   color: #000000;
   text-align: center;
 }
-.navigation-user .navigation-item .cart-active + .popover-cart {display: block;}
+.navigation-user .navigation-item .cart:hover + .popover {display: block;}
 .navigation-item:hover .navigation-catalog-list {display: grid;}
 .navigation-user {margin-bottom: 35px;}
 .navigation-user .navigation-link:not(:first-child):hover {opacity: 0.6;}
@@ -389,18 +389,19 @@ button .visually-hidden {display: block;}
 /*POPOVER*/
 .popover{
   position: absolute;
-  top: 44px;
+  padding-top: 44px;
+  top: 0;
   right: 0;
   z-index: 4;
+  display: none;
+}
+.popover-cart{
   box-sizing: border-box;
   width: 320px;
   color: #ffffff;
   background-color: #000000;
-  display: none;
 }
-.popover.popover-cart:hover {display: block;}
-.popover-open {display: block;}
-.popover-cart {width: 320px;}
+.popover:hover {display: block;}
 .cart-item {
   display: flex;
   justify-content: space-between;
