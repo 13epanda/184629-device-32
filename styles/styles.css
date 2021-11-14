@@ -310,10 +310,10 @@ button .visually-hidden {display: block;}
 .navigation-menu .navigation-item:first-child >.navigation-link:after {
   content:"";
   position: absolute;
-  right: 4px;
+  right: -25px;
   top: 50%;
   z-index: 3;
-  transform: translate(55px, -50%);
+  transform: translate(50%, -50%);
   width: 46px;
   height: 46px;
   background: url("../img/icons/plus.svg") no-repeat center;
