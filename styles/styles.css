@@ -161,7 +161,7 @@ button .visually-hidden {display: block;}
   background-color: #FFE17F;
 }
 .navigation {
-  padding: 40px 50px 50px 40px;
+  padding: 40px 50px 30px 40px;
   position: relative;
   width: 100%;
 }
@@ -194,6 +194,7 @@ button .visually-hidden {display: block;}
 .navigation-user, .navigation-menu{
   display: grid;
   grid-template-columns: 540px 180px 200px 150px;
+  row-gap: 20px;
 }
 .navigation-user .navigation-item .navigation-link {padding: 10px 10px 10px 46px;}
 .navigation-user .navigation-item .navigation-link {
@@ -301,12 +302,16 @@ button .visually-hidden {display: block;}
   opacity: 0.3;
 }
 
-.navigation-user li:last-child, .navigation-user li:nth-child(3), .navigation-menu >li:last-child {margin-left: auto;}
+.navigation-user li:last-child, .navigation-user li:nth-child(3), .navigation-menu >li:nth-child(3n+4) {margin-left: auto;}
 .navigation-menu .navigation-item >.navigation-link {
   position: relative;
   padding: 14px 20px;
 }
-.navigation-menu .navigation-item:first-child {position: relative; width: auto;}
+.navigation-menu .navigation-item:first-child {
+  position: relative;
+  width: auto;
+  grid-row: span 2;
+}
 .navigation-menu .navigation-item:first-child >.navigation-link:after {
   content:"";
   position: absolute;
@@ -641,7 +646,7 @@ button .visually-hidden {display: block;}
 
 /* CUSTOM DELIVERY */
 .custom-delivery {
-  height: 100px;
+  height: 100%;
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
@@ -653,13 +658,13 @@ button .visually-hidden {display: block;}
 .custom-delivery:active .custom-delivery-icon img, .custom-delivery:active span {opacity: 0.3;}
 .custom-delivery-icon{
   width: 125px;
-  height: 100%;
   display: flex;
+  align-self: stretch;
   align-items: center;
   justify-content: center;
   text-align: center;
-  vertical-align: center;
   background-color: #FFE17F;
+  flex-shrink: 0;
 }
 .custom-delivery span {
   font-family: "Raleway", sans-serif;
@@ -669,7 +674,8 @@ button .visually-hidden {display: block;}
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #000000;
-  padding-right: 55px;
+  width: 100%;
+  padding: 37px 80px 43px 30px;
 }
 .custom-delivery-information {
   background: rgba(220, 220, 220, 0.5) url("../img/icons/info.svg") no-repeat center;
@@ -678,22 +684,28 @@ button .visually-hidden {display: block;}
   text-align: center;
   border-radius: 20px;
   margin-right: 31px;
+  flex-shrink: 0;
 }
 
 /* ABOUT US */
 .wrap-about-us {
   display: flex;
-  column-gap: 100px;
   margin-bottom: 75px;
+  justify-content: space-between;
 }
 .wrap-about-us .button {
-  margin-top: 35px;
+  margin-top: auto;
 }
-.about-us {width: 500px;}
+.about-us {
+  width: 500px;
+}
+.contacts {
+  width: 560px;
+}
 .about-us , .contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   position: relative;
   row-gap: 25px;
@@ -703,6 +715,7 @@ button .visually-hidden {display: block;}
 }
 .about-us ul {
   margin-top: 40px;
+  margin-bottom: 35px;
 }
 .about-us ul li {
   padding-top: 10px;
@@ -735,7 +748,10 @@ button .visually-hidden {display: block;}
   font-weight: 800;
   font-size: 24px;
 }
-.contacts .contacts-schedule {margin-top: -10px;}
+.contacts .contacts-schedule {
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
 
 /* SUBSCRIPTION */
 .subscription-wrap {
