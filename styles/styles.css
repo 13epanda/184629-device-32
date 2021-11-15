@@ -98,6 +98,7 @@ ul, ol, p , h1, h2, h3, h4 {
   align-items: center;
   position: relative;
   color: black;
+  background: none;
 }
 .button-primary:before, .button-second:before{
   content: "";
@@ -120,12 +121,11 @@ ul, ol, p , h1, h2, h3, h4 {
   margin: auto;
 }
 .button-third, .button-fourth {
-  outline: 3px solid rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
-
 .button-third:focus {
-  outline: 3px solid #AF4FFF;
+  border: 3px solid #AF4FFF;
 }
 .button-third:hover {
   background-color: #000000;
@@ -136,9 +136,9 @@ ul, ol, p , h1, h2, h3, h4 {
   color: rgba(255, 255, 255, 0.3);
 }
 .button-fourth:focus {
-  outline: 5px solid #AF4FFF;
+  border: 5px solid #AF4FFF;
 }
-.button-fourth:hover, .button-fourth:active {outline: 3px solid #000000;}
+.button-fourth:hover, .button-fourth:active {border: 3px solid #000000;}
 .button-fourth:active {opacity: 0.3;}
 .slider-button {padding: 10px;}
 .slider-button:focus {
@@ -1028,14 +1028,18 @@ button .visually-hidden {display: block;}
 .toggle-min, .toggle-max {top: -9px;}
 .toggle-min {left: 0;}
 .toggle-max {right: 0;}
-.label-min {left: -9px;}
-.label-max {right: -9px;}
+.label-min {left: -9px;
+  transform: translateX(-50%);
+}
+.label-max {
+  right: -9px;
+  transform: translateX(50%);
+}
 .label-min, .label-max {
   position: absolute;
   top: 7px;
   opacity: 0.3;
   width: fit-content;
-  max-width: 60px;
 }
 .range-wrapper-inputs {
   display: flex;
@@ -1049,6 +1053,7 @@ button .visually-hidden {display: block;}
   text-align: left;
   background-color: transparent;
   border: none;
+  width: 60px;
 }
 .label-min:focus, .label-max:focus {color: #AF4FFF;}
 .toggle-min:focus, .toggle-max:focus {outline: 2px solid #AF4FFF;}
