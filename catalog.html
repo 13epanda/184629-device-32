@@ -17,7 +17,7 @@
           <div class="navigation-link search">
             <label class="visually-hidden" for="search">Поиск</label>
             <input class="input-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
-            <button class="button button-search">
+            <button class="button button-search" type="button">
               <span>Найти</span>
             </button>
           </div>
@@ -42,7 +42,7 @@
                     <a class="cart-item">
                       <img class="cart-item-img" src="img/catalog/product-1.jpg" alt="Любительская селфи-палка" width="41" height="43">
                       <p class="cart-item-title">Любительская селфи-палка</p>
-                      <button type="button" class="cart-item-button button">
+                      <button class="cart-item-button button" type="button">
                         <svg width="11" height="11" fill="#ffffff">
                           <path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/>
                         </svg>
@@ -137,13 +137,13 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 126px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
                     <label class="catalog-filter-label label-min">
                       от <input class="range-input" type="number" value="0" name="min-price">
                     </label>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                     <label class="catalog-filter-label label-max">
@@ -310,9 +310,9 @@
                 </a>
               </li>
             </ul>
-            <button class="button button-fourth pagination-show-more" type="button">
+            <a class="button button-fourth pagination-show-more" href="#">
               <span>Загрузить еще</span>
-            </button>
+            </a>
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-prev">
