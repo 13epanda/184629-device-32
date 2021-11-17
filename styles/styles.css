@@ -711,26 +711,43 @@ button .visually-hidden {display: block;}
 /* CUSTOM DELIVERY */
 .custom-delivery {
   height: 100%;
+  position: relative;
   margin-bottom: 145px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #F0F0F0;
 }
-.custom-delivery:focus {outline: 5px solid #AF4FFF;}
-.custom-delivery:hover .custom-delivery-icon {background-color: #FFC700;}
-.custom-delivery:active .custom-delivery-icon img, .custom-delivery:active span {opacity: 0.3;}
-.custom-delivery-icon{
-  width: 125px;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #FFE17F;
-  flex-shrink: 0;
+.custom-delivery:focus {
+  outline: 5px solid #AF4FFF;
 }
-.custom-delivery span {
+.custom-delivery:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 100%;
+  background-color: #FFE17F;
+}
+.custom-delivery:after {
+  content: "";
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: rgba(220, 220, 220, 0.5);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-right: 31px;
+}
+.custom-delivery:hover:before {background-color: #FFC700;}
+.custom-delivery:active:before {
+  background-color: #FFC700;
+}
+.custom-delivery-text {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -740,16 +757,35 @@ button .visually-hidden {display: block;}
   letter-spacing: 0.2em;
   color: #000000;
   width: 100%;
-  padding: 37px 80px 43px 30px;
+  padding: 37px 130px 43px 130px;
 }
-.custom-delivery-information {
-  background: rgba(220, 220, 220, 0.5) url("../img/icons/info.svg") no-repeat center;
+.custom-delivery-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 100%;
+  background-image: url("../img/icons/delivery-car.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.custom-delivery-text:after {
+  content: "";
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right: 30px;
+  background-image: url("../img/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 40px;
   height: 40px;
-  text-align: center;
-  border-radius: 20px;
-  margin-right: 31px;
-  flex-shrink: 0;
+  opacity: 0.3;
+}
+.custom-delivery:active .custom-delivery-text {opacity: 0.3;}
+.custom-delivery:hover .custom-delivery-text:after {
+  opacity: 1;
 }
 
 /* ABOUT US */
