@@ -60,52 +60,47 @@ body {
   margin: 0 auto;
 }
 
-button {
-  border: none;
-  padding: 0;
-  margin: 0;
+.page-header button,
+.main-container button,
+.wrap-page-footer button,
+.modal-container button {
   box-sizing: border-box;
   font-weight: 800;
 }
 
-a {
+.page-header a,
+.main-container a,
+.wrap-page-footer a,
+.modal-container a{
   text-decoration: none;
   color: inherit;
   box-sizing: border-box;
 }
 
-button:focus,
-a:focus,
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
-a:visited,
-a.link {
-  color: inherit;
-}
-
-li {
+.page-header li,
+.main-container li,
+.wrap-page-footer li,
+.modal-container li {
   list-style-type: none;
 }
 
-ul,
-ol,
-p,
-h1,
-h2,
-h3,
-h4 {
+.page-header p,
+.main-container p,
+.wrap-page-footer p,
+.modal-container p{
   margin: 0;
   padding: 0;
 }
 
-b {
+.page-header b,
+.main-container b,
+.wrap-page-footer b,
+.modal-container b {
   font-weight: 800;
 }
 
-input {
+.search input,
+.subscription-form input {
   font-family: "Rubik", sans-serif;
 }
 
@@ -149,6 +144,7 @@ input {
   align-items: center;
   color: black;
   background: none;
+  border: none;
 }
 
 .button-primary:before,
@@ -179,6 +175,11 @@ input {
   background-color: #ffe17f;
 }
 
+.button-primary:focus,
+.button-second:focus {
+  outline: none;
+}
+
 .button-second:hover {
   background-color: #ffc700;
 }
@@ -195,6 +196,7 @@ input {
   font-size: 18px;
   line-height: 21px;
   z-index:1;
+  color: #000000;
 }
 
 .button-third,
@@ -207,20 +209,28 @@ input {
 }
 
 .button-third:focus {
+  outline: none;
   border: 3px solid #af4fff;
 }
 
 .button-third:hover {
-  color: #ffffff;
   background-color: #000000;
 }
 
 .button-third:active {
-  color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
 }
 
+.button-third:hover span {
+  color: #ffffff;
+}
+
+.button-third:active span {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-fourth:focus {
+  outline: none;
   border: 5px solid #af4fff;
 }
 
@@ -235,6 +245,8 @@ input {
 
 .slider-button {
   padding: 10px;
+  outline: none;
+  border: none;
 }
 
 .slider-button:focus {
@@ -307,6 +319,8 @@ button .visually-hidden {
   display: grid;
   grid-template-columns: 540px 180px 200px 150px;
   row-gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-user {
@@ -422,6 +436,7 @@ button .visually-hidden {
 }
 
 .input-search:focus {
+  outline: none;
   color: rgba(0, 0, 0, 0.3);
   border: 2px solid #af4fff;
   border-radius: 20px;
@@ -434,6 +449,7 @@ button .visually-hidden {
 
 .input-search:not(:placeholder-shown).input-search:focus,
 .input-search:active {
+  outline: none;
   border: 2px solid #000000;
   opacity: 1;
 }
@@ -464,6 +480,7 @@ button .visually-hidden {
 }
 
 .button-search:focus {
+  outline: none;
   border-color: #af4fff;
 }
 
@@ -564,8 +581,9 @@ button .visually-hidden {
   row-gap: 9px;
   column-gap: 11px;
   width: 1160px;
-  box-sizing: border-box;
   padding: 22px 45px 50px 45px;
+  margin: 0;
+  box-sizing: border-box;
   background-color: #ffe17f;
 }
 
@@ -631,6 +649,15 @@ button .visually-hidden {
   display: block;
 }
 
+.popover-title {
+  margin: 0;
+  padding: 0;
+}
+
+.cart-items-list {
+  padding: 0;
+  margin: 0;
+}
 .cart-items-list li {
   display: flex;
   justify-content: space-between;
@@ -643,6 +670,7 @@ button .visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  outline: none;
 }
 
 .cart-items-list:nth-child(n+1) {
@@ -730,8 +758,8 @@ button .visually-hidden {
 .about-us h2,
 .contacts h2,
 .subscription h2, .inner-header-title {
-  padding-bottom: 25px;
-  margin-bottom: 0;
+  padding: 0 0 25px 0;
+  margin: 0;
   font-size: 50px;
   font-family: "Raleway", sans-serif;
   line-height: 50px;
@@ -740,12 +768,18 @@ button .visually-hidden {
 }
 
 /* GALLERY */
+
 .gallery-item {
   position: relative;
   top: -35px;
   display: none;
   align-content: flex-start;
   margin-bottom: 35px;
+}
+
+.gallery-list {
+  margin: 0;
+  padding: 0;
 }
 
 .gallery-active {
@@ -807,7 +841,10 @@ button .visually-hidden {
   display: block;
   width: 12px;
   height: 12px;
+  margin: 0;
+  padding: 0;
   outline: 2px solid black;
+  border-color: transparent;
   border-radius: 6px;
   background-color: #ffffff;
 }
@@ -859,6 +896,7 @@ button .visually-hidden {
 
 .description-product p {
   margin: 0;
+  padding: 0;
 }
 
 .description-product div{
@@ -874,12 +912,14 @@ button .visually-hidden {
   display: flex;
   column-gap: 22px;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .characteristics {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .characteristics dl {
@@ -910,6 +950,8 @@ button .visually-hidden {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 .category-item {
@@ -1017,6 +1059,7 @@ button .visually-hidden {
   display: flex;
   flex-direction: column;
   padding: 80px 0 70px;
+  margin: 0;
   gap: 25px;
   border-right: 7px solid black;
 }
@@ -1041,6 +1084,11 @@ button .visually-hidden {
 .additional-features_tabs .button-second span{
   font-size: 18px;
   line-height: 21px;
+}
+
+.additional-features-content {
+  margin: 0;
+  padding: 0;
 }
 
 .additional-features-active {
@@ -1214,8 +1262,8 @@ button .visually-hidden {
 }
 
 .about-us ul {
-  margin-top: 40px;
-  margin-bottom: 35px;
+  margin: 40px 0 35px 0;
+  padding: 0;
 }
 
 .about-us ul li {
@@ -1262,12 +1310,13 @@ button .visually-hidden {
   font-size: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  padding-top: 3px;
+  margin: 0;
+  padding: 3px 0 0 0;
 }
 
 .contacts .contacts-schedule {
-  margin-top: -10px;
-  margin-bottom: 35px;
+  margin: -10px 0 35px 0;
+  padding: 0;
 }
 
 /* SUBSCRIPTION */
@@ -1291,7 +1340,7 @@ button .visually-hidden {
   padding: 0;
 }
 
-.subscription-text {
+.subscription .subscription-text {
   width: 560px;
   padding-top: 10px;
 }
@@ -1300,10 +1349,6 @@ button .visually-hidden {
   width: 100%;
   display: flex;
   align-items: flex-end;
-}
-
-.subscription .button-border {
-  padding-top: 18px;
 }
 
 .subscription span {
@@ -1331,6 +1376,7 @@ button .visually-hidden {
 }
 
 .subscription  #subscription-mail:focus {
+  outline: none;
   background-color: #dcdcdc;
   border: none;
 }
@@ -1386,7 +1432,8 @@ button .visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -5px;
+  margin: -5px 0 0 0;
+  padding: 0;
   color: #ffffff;
 }
 
@@ -1478,6 +1525,8 @@ button .visually-hidden {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social-item {
@@ -1561,13 +1610,13 @@ button .visually-hidden {
 /* CATALOG */
 
 .inner-header-title {
-  margin-top: 37px;
-  padding-bottom: 20px;
-  padding-left: 60px;
+  margin: 37px 0 0 0;
+  padding: 0 0 20px 60px;
 }
 
 .breadcrumbs {
-  padding-left: 48px;
+  padding: 0 0 0 48px;
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -1673,8 +1722,8 @@ button .visually-hidden {
 }
 
 .catalog-filter-list {
-  margin-bottom: 15px;
-  margin-top: 3px;
+  margin: 3px 0 15px 0;
+  padding: 0;
 }
 
 .catalog-filter-list li {
@@ -1765,11 +1814,13 @@ button .visually-hidden {
 
 .label-min:focus,
 .label-max:focus {
+  outline: none;
   color: #af4fff;
 }
 
 .toggle-min:focus,
 .toggle-max:focus {
+  outline: none;
   border: 2px solid #af4fff;
 }
 
@@ -2044,7 +2095,8 @@ button .visually-hidden {
   justify-content: space-between;
   grid-auto-flow: row;
   row-gap: 45px;
-  margin-top: 69px;
+  margin: 69px 0 0 0;
+  padding: 0;
 }
 
 .product-card {
@@ -2066,6 +2118,7 @@ button .visually-hidden {
   position: relative;
   display: flex;
   flex-direction: column;
+  outline: none;
 }
 
 .product-card-link span {
@@ -2125,15 +2178,14 @@ button .visually-hidden {
 }
 
 .product-card .product-card-title {
+  display: inline-block;
+  width: 280px;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
-}
-
-.product-card-title {
-  display: inline-block;
-  width: 280px;
 }
 
 .product-card-price {
@@ -2160,7 +2212,8 @@ button .visually-hidden {
 .pagination {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin: 0 0 70px 0;
+  padding: 0;
   background-color: #ebebeb;
 }
 
@@ -2171,7 +2224,8 @@ button .visually-hidden {
   height: 100%;
 }
 
-.pagination-prev, .pagination-next{
+.pagination-prev,
+.pagination-next{
   display: block;
   box-sizing: border-box;
   padding: 27px 30px;
@@ -2182,18 +2236,29 @@ button .visually-hidden {
   align-items: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.pagination-prev span,
+.pagination-next span {
   color: #000000;
 }
 
 .pagination-prev:focus,
 .pagination-next:focus,
 .pagination-link:focus {
+  background-color: #f0f0f0;
   outline: 5px solid #af4fff;
 }
 
 .pagination-prev:active,
 .pagination-next:active {
+  background-color: #dcdcdc;
   opacity: 0.3;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+  background-color: #dcdcdc;
 }
 
 .pagination .pagination-link {
@@ -2249,9 +2314,11 @@ button .visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  border: none;
 }
 
 .modal-close-button:focus {
+  outline: none;
   border: 5px solid #af4fff;
   border-radius: 25px;
 }
@@ -2265,7 +2332,8 @@ button .visually-hidden {
 }
 
 .modal-title {
-  margin-bottom: 58px;
+  margin: 0 0 58px 0;
+  padding: 0;
   font-size: 50px;
   font-family: "Raleway", sans-serif;
   line-height: 50px;
@@ -2448,6 +2516,8 @@ button .visually-hidden {
   width: 54px;
   height: 60px;
   box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 .delivery-form-count:focus:before {
