@@ -568,11 +568,15 @@ button .visually-hidden {
   display: grid;
 }
 
+.navigation-catalog-list:hover {
+  display: grid;
+}
+
 .navigation-catalog-list {
   position: absolute;
   left: -40px;
   right: auto;
-  top: 100%;
+  top: 12px;
   z-index: 2;
   display: none;
   grid-auto-flow: column;
@@ -581,7 +585,7 @@ button .visually-hidden {
   row-gap: 9px;
   column-gap: 11px;
   width: 1160px;
-  padding: 22px 45px 50px 45px;
+  padding: 55px 45px 50px 45px;
   margin: 0;
   box-sizing: border-box;
   background-color: #ffe17f;
