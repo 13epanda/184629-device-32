@@ -1065,6 +1065,11 @@ button .visually-hidden {
   background-color: #f0f0f0;
 }
 
+.custom-delivery:hover,
+.custom-delivery:active {
+  background-color: #ebebeb;
+}
+
 .custom-delivery:focus {
   outline: 5px solid #af4fff;
 }
@@ -1775,10 +1780,10 @@ button .visually-hidden {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  visibility: hidden;
   width: 20px;
   height: 20px;
   margin: 0;
+  opacity: 0;
 }
 
 .control-input[type="checkbox"] + .control-mark {
