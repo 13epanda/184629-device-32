@@ -1,4 +1,5 @@
 /* Raleway */
+
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -8,6 +9,7 @@
 }
 
 /* Rubik */
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -160,16 +162,16 @@ input {
   left: 0;
   width: 100%;
   height: 8px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-primary:focus:before,
 .button-second:focus:before {
-  background-color: #AF4FFF;
+  background-color: #af4fff;
 }
 
 .button-primary:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-primary:active span {
@@ -177,11 +179,11 @@ input {
 }
 
 .button-primary:active {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-second:hover {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .button-second:hover:before {
@@ -208,7 +210,7 @@ input {
 }
 
 .button-third:focus {
-  border: 3px solid #AF4FFF;
+  border: 3px solid #af4fff;
 }
 
 .button-third:hover {
@@ -222,7 +224,7 @@ input {
 }
 
 .button-fourth:focus {
-  border: 5px solid #AF4FFF;
+  border: 5px solid #af4fff;
 }
 
 .button-fourth:hover,
@@ -239,7 +241,7 @@ input {
 }
 
 .slider-button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-radius: 6px;
 }
 
@@ -263,7 +265,7 @@ button .visually-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .navigation {
@@ -333,7 +335,7 @@ button .visually-hidden {
 }
 
 .navigation-user .navigation-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-radius: 20px;
   box-sizing: border-box;
 }
@@ -423,7 +425,7 @@ button .visually-hidden {
 
 .input-search:focus {
   color: rgba(0, 0, 0, 0.3);
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   border-radius: 20px;
   opacity: 1;
 }
@@ -463,12 +465,12 @@ button .visually-hidden {
 }
 
 .button-search:focus {
-  border-color: #AF4FFF;
+  border-color: #af4fff;
 }
 
 .button-search:hover,
 .button-search:active {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -517,7 +519,7 @@ button .visually-hidden {
 }
 
 .navigation-menu .navigation-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-radius: 25px;
 }
 
@@ -565,7 +567,7 @@ button .visually-hidden {
   width: 1160px;
   box-sizing: border-box;
   padding: 22px 45px 50px 45px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .navigation-catalog-list .navigation-catalog-item:last-child {
@@ -579,7 +581,7 @@ button .visually-hidden {
 }
 
 .navigation-catalog-item .navigation-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-radius: 25px;
 }
 
@@ -596,6 +598,7 @@ button .visually-hidden {
 }
 
 /*POPOVER*/
+
 .popover{
   position: absolute;
   top: 0;
@@ -644,7 +647,7 @@ button .visually-hidden {
   display: flex;
   justify-content: space-between;
   padding: 13px 20px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
 
 .cart-item-img {
@@ -652,7 +655,7 @@ button .visually-hidden {
 }
 
 .cart-item:focus .cart-item-img {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .cart-item-title {
@@ -660,11 +663,11 @@ button .visually-hidden {
 }
 
 .cart-item:focus .cart-item-title {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .cart-item:focus .cart-item-button {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .cart-item:hover {
@@ -677,12 +680,12 @@ button .visually-hidden {
 
 .popover .button-fourth:hover {
   border: none;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .popover .button-fourth:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   border: none;
   opacity: 1;
 }
@@ -732,7 +735,7 @@ button .visually-hidden {
   width: 100%;
   height: 150px;
   content: "";
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .gallery-item:after {
@@ -790,7 +793,7 @@ button .visually-hidden {
 }
 
 .slider-pagination-button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .slider-pagination-button:hover {
@@ -906,12 +909,12 @@ button .visually-hidden {
   width: 160px;
   height: 160px;
   margin-bottom: 27px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .category-item a:focus {
-  outline: 5px solid #AF4FFF;
-  color: #AF4FFF;
+  outline: 5px solid #af4fff;
+  color: #af4fff;
 }
 
 .category-item div:before {
@@ -949,7 +952,7 @@ button .visually-hidden {
 
 .category-item a:hover div,
 .category-item a:active div {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .category-item a:active div:before,
@@ -958,6 +961,7 @@ button .visually-hidden {
 }
 
 /* ADDITIONAL FEATURES */
+
 .additional-features-wrap {
   position: relative;
   padding-bottom: 70px;
@@ -972,7 +976,7 @@ button .visually-hidden {
   z-index: -1;
   width: 100%;
   min-height: 288px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .additional-features {
@@ -1001,7 +1005,7 @@ button .visually-hidden {
   width: 100%;
   font-size: 18px;
   line-height: 21px;
-  color: #FFE17F;
+  color: #ffe17f;
   text-align: left;
   background: black;
 }
@@ -1050,6 +1054,7 @@ button .visually-hidden {
 }
 
 /* CUSTOM DELIVERY */
+
 .custom-delivery {
   position: relative;
   height: 100%;
@@ -1057,11 +1062,11 @@ button .visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 145px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .custom-delivery:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .custom-delivery:before {
@@ -1071,7 +1076,7 @@ button .visually-hidden {
   left: 0;
   width: 125px;
   height: 100%;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .custom-delivery:after {
@@ -1089,11 +1094,11 @@ button .visually-hidden {
 }
 
 .custom-delivery:hover:before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .custom-delivery:active:before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .custom-delivery-text {
@@ -1144,6 +1149,7 @@ button .visually-hidden {
 }
 
 /* ABOUT US */
+
 .wrap-about-us {
   display: flex;
   margin-bottom: 75px;
@@ -1213,7 +1219,7 @@ button .visually-hidden {
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 /*CONTACTS*/
@@ -1240,7 +1246,7 @@ button .visually-hidden {
 .subscription-wrap {
   padding-top: 75px;
   padding-bottom: 131px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subscription {
@@ -1296,12 +1302,12 @@ button .visually-hidden {
 }
 
 .subscription  #subscription-mail:focus {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   border: none;
 }
 
 .subscription #subscription-mail:invalid {
-  outline-color: #FF3D3D;
+  outline-color: #ff3d3d;
 }
 
 .subscription  #subscription-mail:hover {
@@ -1337,7 +1343,7 @@ button .visually-hidden {
 }
 
 .page-footer .page-header-logo path {
-  fill: #FFC700;
+  fill: #ffc700;
 }
 
 .page-footer address {
@@ -1380,13 +1386,13 @@ button .visually-hidden {
 }
 
 .page-footer .footer-menu a:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-radius: 25px;
 }
 
 .footer-menu a:hover,
 .footer-menu a:active {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .footer-menu a:hover:after,
@@ -1398,11 +1404,11 @@ button .visually-hidden {
   height: 2px;
   margin: 0 20px;
   content: "";
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .footer-menu a:active {
-  color: #FFC700;
+  color: #ffc700;
   opacity: 0.3;
 }
 
@@ -1413,7 +1419,7 @@ button .visually-hidden {
 .page-footer div.line {
   height: 7px;
   width: 80px;
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .footer-tel {
@@ -1424,14 +1430,14 @@ button .visually-hidden {
 }
 
 .footer-tel:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   box-sizing: border-box;
   border-radius: 25px;
 }
 
 .footer-tel:hover,
 .footer-tel:active {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .footer-tel:active {
@@ -1475,7 +1481,7 @@ button .visually-hidden {
 
 .footer-social-item a:focus {
   background-color: #444444;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .footer-social-item a:focus .social-icon {
@@ -1484,7 +1490,7 @@ button .visually-hidden {
 
 .footer-social-item a:hover,
 .footer-social-item a:active {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .footer-social-item a:hover .social-icon,
@@ -1507,11 +1513,11 @@ button .visually-hidden {
   padding: 10px;
   margin-top: 8px;
   margin-right: -10px;
-  fill: #FFC700;
+  fill: #ffc700;
 }
 
 .page-footer .htmlacademy:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .page-footer .htmlacademy:hover svg {
@@ -1551,7 +1557,7 @@ button .visually-hidden {
 }
 
 .breadcrumbs .breadcrumbs-link:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
   opacity: 1;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -1600,7 +1606,7 @@ button .visually-hidden {
 
 .catalog-filter {
   flex-grow: 1;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .catalog-filter h3 {
@@ -1608,7 +1614,7 @@ button .visually-hidden {
   justify-content: flex-end;
   margin: 0 0 70px 0;
   padding: 25px 0;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .catalog-filter h3 span {
@@ -1658,7 +1664,7 @@ button .visually-hidden {
 .range-scale {
   position: relative;
   height: 2px;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .range-bar {
@@ -1671,7 +1677,7 @@ button .visually-hidden {
   position: absolute;
   width: 18px;
   height: 18px;
-  background: #EBEBEB;
+  background: #ebebeb;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
@@ -1732,22 +1738,22 @@ button .visually-hidden {
 
 .label-min:focus,
 .label-max:focus {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .toggle-min:focus,
 .toggle-max:focus {
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
 }
 
 .toggle-min:focus + .catalog-filter-label,
 .toggle-max:focus + .catalog-filter-label {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .toggle-min:focus + .catalog-filter-label .range-input,
 .toggle-max:focus + .catalog-filter-label .range-input {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 .toggle-min:active + .catalog-filter-label , .toggle-max:active + .catalog-filter-label {
   opacity: 1;
@@ -1844,15 +1850,15 @@ button .visually-hidden {
 }
 
 .control-input:focus + .control-mark {
-  outline-color: #AF4FFF;
+  outline-color: #af4fff;
 }
 
 .control-input:focus + .control-label {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .control-input:focus + .control-mark svg {
-  fill: #AF4FFF;
+  fill: #af4fff;
 }
 
 .control-input:checked:hover + .control-mark {
@@ -1885,7 +1891,7 @@ button .visually-hidden {
 }
 
 .select-control:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .select-control:hover {
@@ -1902,7 +1908,7 @@ button .visually-hidden {
 
 .sorting-wrap {
   height: 70px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .sorting-wrap label {
@@ -1946,7 +1952,7 @@ button .visually-hidden {
 
 .sorting-from-more:focus,
 .sorting-from-smaller:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
   opacity: 1;
   color: rgba(0, 0, 0, 0.2);
 }
@@ -2023,12 +2029,12 @@ button .visually-hidden {
 }
 
 .product-card-link:focus .product-img {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .product-card-link:focus .product-card-title,
 .product-card-link:focus .product-card-price {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .product-img span {
@@ -2053,12 +2059,12 @@ button .visually-hidden {
 }
 
 .product-img:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .product-img:focus ~ .product-text h3,
 .product-img:focus ~ .product-text b {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .product-text {
@@ -2104,7 +2110,7 @@ button .visually-hidden {
   display: flex;
   justify-content: space-between;
   margin-bottom: 77px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .pagination-item-page {
@@ -2131,7 +2137,7 @@ button .visually-hidden {
 .pagination-prev:focus,
 .pagination-next:focus,
 .pagination-link:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .pagination-prev:active,
@@ -2193,7 +2199,7 @@ button .visually-hidden {
 }
 
 .modal-close-button:focus {
-  border: 5px solid #AF4FFF;
+  border: 5px solid #af4fff;
   border-radius: 25px;
 }
 
@@ -2250,12 +2256,12 @@ button .visually-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border: none;
 }
 
 .delivery-form-field:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .delivery-form-field:active {
@@ -2263,7 +2269,7 @@ button .visually-hidden {
 }
 
 .delivery-form-field:invalid {
-  outline: 3px solid #FF3D3D;
+  outline: 3px solid #ff3d3d;
 }
 
 .delivery-form-field:not(:placeholder-shown) + .modal-hint-error {
@@ -2303,7 +2309,7 @@ button .visually-hidden {
 }
 
 .modal-hint-error {
-  color: #FF3D3D;
+  color: #ff3d3d;
 }
 
 .delivery-form .button-primary {
@@ -2330,7 +2336,7 @@ button .visually-hidden {
   width: 26px;
   height: 26px;
   text-align: center;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-image: url("../img/icons/info.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -2359,7 +2365,7 @@ button .visually-hidden {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -2394,7 +2400,7 @@ button .visually-hidden {
 .delivery-form-count:focus:before {
   width: 32px;
   height: 32px;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-radius: 50%;
 }
 
