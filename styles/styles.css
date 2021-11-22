@@ -1125,11 +1125,18 @@ body {
 
 .custom-delivery {
   position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  width: 100%;
+  padding: 37px 130px 43px 130px;
   margin-bottom: 145px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  line-height: 23px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
   background-color: #f0f0f0;
 }
 
@@ -1150,6 +1157,9 @@ body {
   width: 125px;
   height: 100%;
   background-color: #ffe17f;
+  background-image: url("../img/icons/delivery-car.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .custom-delivery:after {
@@ -1162,8 +1172,12 @@ body {
   height: 40px;
   text-align: center;
   margin-right: 31px;
-  background: rgba(220, 220, 220, 0.5);
+  background-color: rgba(220, 220, 220, 0.5);
   border-radius: 20px;
+  background-image: url("../img/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
 }
 
 .custom-delivery:hover:before {
@@ -1174,6 +1188,7 @@ body {
   background-color: #ffc700;
 }
 
+/*не нужно
 .custom-delivery-text {
   width: 100%;
   padding: 37px 130px 43px 130px;
@@ -1213,12 +1228,12 @@ body {
   opacity: 0.3;
 }
 
-.custom-delivery:active .custom-delivery-text {
-  opacity: 0.3;
-}
-
 .custom-delivery:hover .custom-delivery-text:after {
   opacity: 1;
+}
+*/
+.custom-delivery:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* ABOUT US */
