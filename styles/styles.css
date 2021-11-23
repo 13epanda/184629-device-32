@@ -2358,7 +2358,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 65px 70px 70px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -2366,8 +2366,8 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 72px;
-  right: 66px;
+  top: 68px;
+  right: 57px;
   width: 50px;
   height: 50px;
   background-color: #ffffff;
@@ -2472,8 +2472,8 @@ body {
 
 .field-group svg {
   position: absolute;
-  right: 24px;
-  top: 68px;
+  right: 20px;
+  top: 65px;
 }
 
 .modal-hint,
@@ -2564,7 +2564,7 @@ body {
 
 #delivery-count {
   width: 100%;
-  padding: 0;
+  padding: 0 0 10px 14px;
   margin: 0;
   text-align: center;
 }
