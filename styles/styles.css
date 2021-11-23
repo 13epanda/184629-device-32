@@ -804,6 +804,10 @@ body {
   margin-bottom: 35px;
 }
 
+.gallery-item-3 .slider-button {
+  bottom: 195px;
+}
+
 .gallery-list {
   margin: 0;
   padding: 0;
@@ -860,7 +864,7 @@ body {
 }
 
 .description-product p:first-child {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .slider-pagination-button,
@@ -939,7 +943,7 @@ body {
 .slider-pagination {
   display: flex;
   column-gap: 22px;
-  margin: -5px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -952,11 +956,15 @@ body {
 
 .characteristics dl {
   display: flex;
-  width: 150px;
+  width: 155px;
   row-gap: 12px;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  padding-right: 10px;
+  padding-right: 5px;
+}
+
+.characteristics-small dl {
+  width: 138px;
 }
 
 .characteristics dt {

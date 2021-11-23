@@ -116,8 +116,8 @@
       <h1 class="visually-hidden">Магазин электротехники «Device».</h1>
       <section class="gallery page-container">
         <ol class="gallery-list">
-          <!--Для отображения контента слайда необходимо прописывать класс gallery-active-->
-          <li class="gallery-item gallery-active gallery-item-1">
+          <!--Для отображения контента слайда необходимо заменить класс visually-hidden на gallery-active-->
+          <li class="gallery-item gallery-item-1 gallery-active">
             <h2 class="visually-hidden">Квадрокоптер.</h2>
             <section class="gallery-product">
               <button class="slider-button slider-prev" type="button">
@@ -137,6 +137,7 @@
                 <a class="button button-primary" href="#">
                   <span>Подробнее</span>
                 </a>
+                <!--Для отображения активного слайдера в пагинации добавляется класс slider-pagination-button-current-->
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -171,7 +172,7 @@
               </ul>
             </section>
           </li>
-          <li class="gallery-item gallery-item-2 visually-hidden">
+          <li class="gallery-item visually-hidden gallery-item-2">
             <h2 class="visually-hidden">Фитнес-браслет.</h2>
             <section class="gallery-product">
               <button class="slider-button slider-prev" type="button">
@@ -184,13 +185,14 @@
             </section>
             <section class="description-product">
               <p>
-                <b>Худеем правильно!</b>
+                <b>Худеем <br>правильно!</b>
               </p>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <div>
                 <a class="button button-primary" href="#">
                   <span>Подробнее</span>
                 </a>
+                <!--Для отображения активного слайдера в пагинации добавляется класс slider-pagination-button-current-->
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button" type="button">
@@ -232,13 +234,14 @@
             </section>
             <section class="description-product">
               <p>
-                <b>Делай селфи, как Бен Стиллер!</b>
+                <b>Делай селфи, <br>как Бен Стиллер!</b>
               </p>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <div>
                 <a class="button button-primary" href="#">
                   <span>Подробнее</span>
                 </a>
+                <!--Для отображения активного слайдера в пагинации добавляется класс slider-pagination-button-current-->
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button" type="button">
@@ -264,7 +267,7 @@
                     <dd>8,5 м</dd>
                   </dl>
                 </li>
-                <li>
+                <li  class="characteristics-small">
                   <dl>
                     <dt>Вес палки</dt>
                     <dd>5 кг</dd>
