@@ -1724,19 +1724,12 @@ body {
 }
 
 .catalog-filter h3 {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 0 65px 0;
-  padding: 25px 0;
-  background-color: #dcdcdc;
-}
-
-.catalog-filter h3 span {
-  width: 270px;
-  margin-left: 60px;
+  margin: 0 0 68px 0;
+  padding: 25px 0 25px calc(100% - 270px);
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  background-color: #dcdcdc;
 }
 
 .filters {
