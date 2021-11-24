@@ -1090,6 +1090,10 @@ body {
   padding: 0;
 }
 
+.additional-features-item {
+  display: none;
+}
+
 .additional-features h2 {
   padding-bottom: 30px
 }
@@ -1114,6 +1118,7 @@ body {
   color: #ffe17f;
   text-align: left;
   background: black;
+  border: none;
 }
 
 .button-additional-features {
