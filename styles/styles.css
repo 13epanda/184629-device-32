@@ -315,6 +315,7 @@ body {
   position: absolute;
   top:50%;
   transform: translateY(-50%);
+  line-height: 19px;
   opacity: 0.3;
 }
 
@@ -1118,11 +1119,10 @@ body {
   color: #ffe17f;
   text-align: left;
   background: black;
-  border: none;
 }
 
 .button-additional-features {
-  min-width: 160px;
+  min-width: 165px;
 }
 
 .button-additional-features span{
@@ -1131,7 +1131,7 @@ body {
 }
 
 .additional-features-content {
-  margin: 0 0 0 110px;
+  margin: 0 0 0 115px;
   padding: 0;
 }
 
